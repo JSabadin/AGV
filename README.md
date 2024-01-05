@@ -13,6 +13,8 @@ This project presents a sophisticated control system for an Automated Guided Veh
 
 
 ### Technologies Used
-- **Programming Language**: Python
-- **Framework**: Robot Operating System (ROS)
+- **Programming Language**: Python, a powerful, flexible language known for its readability and ease of use.
+- **Framework**: Robot Operating System (ROS), a flexible framework for writing robot software, offering a collection of tools, libraries, and conventions.
+- **Hardware**: Raspberry Pi, a compact and affordable computer, connected to our PC using SSH for remote access and control.
+
 
