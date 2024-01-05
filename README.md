@@ -1,14 +1,16 @@
-# Advanced Ground Vehicle (AGV) Control and Navigation System
+# Automated Guided Vehicle (AGV) Control System
 
-## Project Overview
-This repository contains a sophisticated robotic system project designed for an Advanced Ground Vehicle (AGV). The system integrates various functionalities, each developed in Python and interfacing with the Robot Operating System (ROS).
+## Overview
+This project presents a sophisticated control system for an Automated Guided Vehicle (AGV). It integrates a variety of robotic principles and algorithms to offer a range of functionalities, including odometry, localization, path planning, and line following, all developed within the Robot Operating System (ROS) framework.
 
-### Key Features
-- **Odometry**: Implements odometry for precise motion tracking of the AGV.
-- **Kalman Filtering**: Utilizes Kalman filtering for accurate localization within the environment.
-- **Control Mechanisms**: Incorporates advanced control algorithms to guide the AGV to designated reference points.
-- **Line Following**: Features a line-following algorithm for guided navigation along predefined paths.
-- **Path Planning**: Employs the A* algorithm for efficient and effective path planning.
+### Features
+- **Odometry**: Implements motion tracking of the AGV for accurate positioning.
+- **Kalman Filter**: Employed for enhanced localization of the vehicle, ensuring precision in navigation.
+- **Control to Reference Point**: Enables the AGV to navigate and align with specific reference points.
+- **Line Following**: Features an algorithm that allows the AGV to follow a predefined line path.
+- **Path Planning using A***: Incorporates the A* algorithm for efficient and optimized path planning.
+- **Python and ROS Integration**: Developed in Python, the system communicates effectively with ROS, showcasing seamless integration and operation.
+
 
 ### Technologies Used
 - **Programming Language**: Python
