@@ -17,7 +17,7 @@ from world import MTAG
 def wrap_to_pi(angle):
     return ((angle + np.pi) % (2 * np.pi)) - np.pi
 
-def prediction(q_prev, u, P_estimate, Q):  
+def kalman_filter_prediction(q_prev, u, P_estimate, Q):  
     """
     Prediction of states and covariance matrix P for robot localization.
     
@@ -58,9 +58,9 @@ def prediction(q_prev, u, P_estimate, Q):
     return q_estimate, P_predict
 
 
-def kalman_filter(q_prediciton, P_prediction, z, R):
+def kalman_filter_correction(q_prediciton, P_prediction, z, R):
     """
-    Kalman Filter for robot localization.
+    Kalman Filter correction for robot localization.
     
     Parameters:
     q_prediciton: Initial state estimate [x, y, phi].
@@ -128,7 +128,7 @@ class Localisation(object):
     self.Q = np.diag([1* deltaD, 1 * deltaD]) # Process noise covariance
     u = [deltaD, gamma]
 
-    self.q_estimate, self.P_estimate = prediction(self.q_estimate, u, self.P_estimate, self.Q)
+    self.q_estimate, self.P_estimate = kalman_filter_prediction(self.q_estimate, u, self.P_estimate, self.Q)
     # If we get the measuremant we correct the position
     if self.new_tag != self.last_tag_detected and self.new_tag in tagPoses:
         self.last_tag_detected = self.new_tag
@@ -137,7 +137,7 @@ class Localisation(object):
         z = [x_tag, y_tag, phi_tag]
 
         # Update Kalman Filter with new tag measurement
-        self.q_estimate, self.P_estimate = kalman_filter(self.q_estimate, self.P_estimate, z, self.R)
+        self.q_estimate, self.P_estimate = kalman_filter_correction(self.q_estimate, self.P_estimate, z, self.R)
 
     self.x, self.y, self.phi = self.q_estimate
 
