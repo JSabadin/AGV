@@ -75,7 +75,7 @@ with Agv() as robot:
     DELTA_S = 1   # Distance for calibration
     NUM_STEPS = 111000 # Number of encoder steps for the given DELTA_S distance.
     distance_per_step = DELTA_S / NUM_STEPS
-    EncodHeading_offset = 945  # Insert the encoder offset value here 370. We change it 14.11 to 365 because it was off, changed to 945 because new wheels
+    EncodHeading_offset = 691  # Insert the encoder offset value here 370. We change it 14.11 to 365 because it was off, changed to 945 because new wheels
     MAX_ENCODER_VALUE = 2**13  # Assuming 13-bit encoder
 
     # Dimensions of robot in meters
