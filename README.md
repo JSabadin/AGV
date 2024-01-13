@@ -10,11 +10,11 @@ Bellow we show the robot used.
 
 ### Features
 - **Odometry**: Implements motion tracking of the AGV for accurate positioning.
-- **Kalman Filter**: Employed for enhanced localization of the vehicle, ensuring precision in navigation.
+- **Kalman Filter**: Employed for enhanced localization of the vehicle, ensuring precision in navigation. (Image bellow is obtained by simulation in matlab)
   
   <img src="docs/localisation.png" alt="Localization Simulation" width="400"/>
 
-- **Control to Reference Point**: Enables the AGV to navigate and align with specific reference points.
+- **Control to Reference Point**: Enables the AGV to navigate and align with specific reference points. (Images bellow are obtained by simulation in matlab)
   
   <p float="left">
     <img src="docs/point_odom.png" alt="Control to Reference Point" width="250"/>
@@ -24,7 +24,7 @@ Bellow we show the robot used.
 
 - **Line Following**: Features an algorithm that allows the AGV to follow a predefined line path.
 
-- **Path Planning using A***: Incorporates the A* algorithm for efficient and optimized path planning.
+- **Path Planning using A***: Incorporates the A* algorithm for efficient and optimized path planning.(Image bellow is obtained by simulation in matlab)
   
   <img src="docs/A_star.png" alt="Path Planning using A*" width="400"/>
 
