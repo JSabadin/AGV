@@ -2,6 +2,11 @@
 
 ## Overview
 This project presents a sophisticated control system for an Automated Guided Vehicle (AGV). It integrates a variety of robotic principles and algorithms to offer a range of functionalities, including odometry, localization, path planning, and line following, all developed within the Robot Operating System (ROS) framework.
+Bellow we show the robot used.
+ <p float="left">
+    <img src="docs/robot_2" alt="Control to Reference Point" width="250"/>
+    <img src="docs/robot_1" alt="Control to Reference Point" width="250"/>
+  </p>
 
 ### Features
 - **Odometry**: Implements motion tracking of the AGV for accurate positioning.
